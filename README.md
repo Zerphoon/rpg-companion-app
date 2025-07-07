@@ -7,4 +7,4 @@ A fantasy-themed web app for tracking RPG characters, inventory, and quests. Bui
 - Downloadable summaries
 - Light/dark theme toggle
 
-🔗 [Live Demo](https://zerphoon.github.io/rpg-companion/)
+🔗 [Live Demo](https://zerphoon.github.io/rpg-companion-app/)

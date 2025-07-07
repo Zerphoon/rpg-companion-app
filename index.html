@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RPG Companion App</title>
+  <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+<button onclick="toggleTheme()" id="themeButton">Switch to Light Mode</button>
+  <h1>🧙 RPG Companion App</h1>
+
+<label for="slotSelect"><strong>Select Character Slot:</strong></label>
+<select id="slotSelect" onchange="loadCharacterSlot()">
+  <option value="slot1">Slot 1</option>
+  <option value="slot2">Slot 2</option>
+  <option value="slot3">Slot 3</option>
+</select>
+
+  <section id="character-section">
+    <h2>Character Info</h2>
+    <input type="text" id="charName" placeholder="Name" />
+    <input type="text" id="charClass" placeholder="Class" />
+    <input type="number" id="charLevel" placeholder="Level" />
+    <input type="number" id="charHP" placeholder="HP" />
+    <input type="number" id="charMP" placeholder="MP" />
+    <input type="number" id="charAG" placeholder="Agility" />
+    <button onclick="saveCharacter()">Save Character</button>
+    <div id="charOutput"></div>
+  </section>
+<button onclick="exportData()">Download Summary</button>
+
+  <section id="inventory-section">
+    <h2>Inventory</h2>
+    <input type="text" id="itemInput" placeholder="Add an item" />
+    <button onclick="addItem()">Add</button>
+    <ul id="inventoryList"></ul>
+  </section>
+
+  <section id="quest-section">
+    <h2>Active Quests</h2>
+    <input type="text" id="questInput" placeholder="New quest" />
+    <button onclick="addQuest()">Add</button>
+    <ul id="questList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* === Font and Base === */
+body {
+  font-family: 'MedievalSharp', cursive;
+  background: url('https://images.stockcake.com/public/4/c/a/4ca5e840-7cd0-4909-b003-b435b1250aab_large/aged-parchment-texture-stockcake.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3b2f1e;
+  padding: 20px;
+  margin: 0;
+}
+
+/* === Headings === */
+h1, h2 {
+  text-align: center;
+  text-shadow: 1px 1px #d3c6aa;
+  margin-bottom: 15px;
+}
+
+/* === Themed Sections === */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #9c7b4b;
+}
+
+/* === Inputs and Buttons === */
+input, select, button {
+  font-family: 'MedievalSharp', cursive;
+  padding: 10px 12px;
+  margin: 6px 4px;
+  border-radius: 6px;
+  border: 1px solid #7e5c3c;
+  background-color: #fff8e1;
+  color: #3b2f1e;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #b89b72;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8c6a44;
+}
+
+/* === Output Box === */
+#charOutput {
+  margin-top: 12px;
+  background-color: #fdf3d3;
+  padding: 12px;
+  border: 1px dashed #a0774f;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* === List Styling === */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #eee2c4;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #dac6a6;
+  text-decoration: line-through;
+}
+
+/* === Theme Toggle Button === */
+#themeButton {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* === Light Mode Support === */
+body.light-mode {
+  background: #f4f4f4;
+  color: #000000;
+}
+
+body.light-mode section {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+body.light-mode button {
+  background-color: #0077cc;
+}
+
+body.light-mode li {
+  background-color: #e0e0e0;
+}
+
+body.light-mode #charOutput {
+  background-color: #f2f2f2;
+  border-color: #999;
+}
